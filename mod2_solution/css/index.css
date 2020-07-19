@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Segoe Script;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+h2 {
+	text-align: center;
+	margin: 0px;
+	width: 150px;
+	border: 1px solid black;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+}
+
+.col-1, .col-2, .col-3 {
+	position: relative;
+	background-color: gray;
+	border: 1px solid black;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 40px;
+	padding: 50px 20px 20px 20px;
+}
+
+@media (min-width: 992px) {
+	.col-1, .col-2, .col-3 {
+		width: 30%;
+		float: left;
+	}
+}
+
+@media (min-width: 768 and max-width: 991px){
+
+}
+
+@media (max-width: 767px){
+
+}
