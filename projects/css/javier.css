@@ -1,0 +1,49 @@
+body{
+	background: black;
+	color: #fff;
+}
+
+h1 {
+	font-size: 200px;
+	position: absolute;
+	top: 250px;
+	left: -290px;
+	transform: rotate(270deg);	
+	margin: 0px 0px 0px 0px;
+}
+
+.outer {
+	position: relative;
+	left: 133px;
+}
+
+.outer>h2 {
+	font-size: 35px;
+}
+
+.inner {
+	position: absolute;
+	height: 35px;
+	font-size: 35px;
+	text-transform: uppercase;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.inner>span {
+	animation: animate 10s ease infinite;
+	position: relative;
+	color: white;
+}
+
+@keyframes animate {
+	0%{ top: 0 }
+	20%{ top: 0 }
+	25%{ top: -40px }
+	45%{ top: -40px }
+	50%{ top: -80px }
+	75%{ top: -80px }
+	80%{ top: -120px }
+	95%{ top: -120px }
+	100%{ top: 0 }
+}
