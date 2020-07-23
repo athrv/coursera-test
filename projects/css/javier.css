@@ -1,4 +1,4 @@
-body{
+body, html{
 	background-color: #171616;
 	color: #666666;
 }
@@ -49,12 +49,12 @@ body{
 }
 
 .navbar {
-	width: 3rem;
+	width: 50px;
 	position: absolute;
-	background-color: #3b3b3b;
 	right: 0px;
 	top: 60px;
-	border-radius: 15px;
+	background-color: #3b3b3b;
+	border-radius: 30px;
 	transition: width 600ms ease;
 	overflow: scroll;
 }
@@ -64,23 +64,32 @@ body{
 	height: 100%;
 }
 
-.navbar:hover .nav-item {
-	width: 25%;
-	margin: 50px 0 50px 0;
-}
-
-.navbar:hover a>svg {
-	
-}
-
-.navbar:hover .link-text{
-	display: block;
-	text-decoration: none;
+.navbar:hover .nav-item, .logo {
+	margin: 40px 0 0px;
 	text-align: center;
+}
+
+.navbar:hover svg.icon {
+	width: 35%;
+}
+
+.navbar:hover .link-text {
+	display: block;
+	text-align: center;
+	text-decoration: none;
 	text-transform: uppercase;
 	color: #171616;
 	font-size: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+.navbar:hover .logo svg {
+	transform: rotate(180deg);
+	color: #9dbce0;
+}
+
+.navbar:hover .logo span {
+	color: #9dbce0;
 }
 
 .navbar-nav {
@@ -93,14 +102,7 @@ body{
 }
 
 .nav-item {
-	margin: 30px 0px 30px 0px;
-	width: 30px;
-	align-self: center;
-}
-
-.nav-item:last-child {
-	margin-top: 20px;
-	margin-bottom: 2px;
+	margin: 5px 5px 5px 5px;
 }
 
 nav::-webkit-scrollbar {
@@ -121,4 +123,9 @@ svg {
 
 .link-text {
 	display: none;
+}
+
+.logo svg {
+	transform: rotate(0deg);
+	transition: transform 900ms ease;
 }
